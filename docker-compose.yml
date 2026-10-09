@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bfsi-rag-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+      - VECTOR_DB_PROVIDER=chromadb
+      - EMBEDDING_PROVIDER=local
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+    volumes:
+      - ./data/processed:/app/data/processed
+      - ./data/chunks:/app/data/chunks
+      - ./data/vectorstore:/app/data/vectorstore
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: bfsi-rag-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped

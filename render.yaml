@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: bfsi-policy-research-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn src.api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: VECTOR_DB_PROVIDER
+        value: chromadb
+      - key: EMBEDDING_PROVIDER
+        value: local
+      - key: ANTHROPIC_API_KEY
+        sync: false
+    healthCheckPath: /health
+
+  - type: web
+    name: bfsi-policy-research-frontend
+    runtime: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
