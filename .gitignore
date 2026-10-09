@@ -38,4 +38,11 @@ Thumbs.db
 # Build Artifacts
 build/
 dist/
+frontend/dist/
+frontend/node_modules/
 *.egg-info/
+
+# SQLite Database
+data/*.db
+data/*.sqlite
+data/*.sqlite3
