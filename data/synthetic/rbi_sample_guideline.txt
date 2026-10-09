@@ -1,0 +1,43 @@
+[SYNTHETIC TEST DATASET - FOR AUTOMATED TESTING ONLY - NOT AN OFFICIAL REGULATORY PUBLICATION]
+
+RESERVE BANK OF INDIA
+DEPARTMENT OF REGULATION
+CENTRAL OFFICE, MUMBAI
+
+RBI/2024-25/SYNTH-88
+DoR.STR.REC.No.44/21.04.048/2024-25
+
+October 01, 2024
+
+To,
+All Commercial Banks (including Small Finance Banks),
+All Non-Banking Financial Companies (NBFCs),
+All Primary (Urban) Co-operative Banks
+
+Madam / Dear Sir,
+
+Guidelines on AI-Driven Credit Underwriting and Algorithmic Model Governance
+
+1. Scope and Applicability
+1.1 These guidelines apply to all Regulated Entities (REs) utilizing automated machine learning (ML) or artificial intelligence (AI) models for retail and MSME credit decisioning, scoring, and underwriting.
+1.2 The objective is to ensure model interpretability, prevent systemic algorithmic bias, protect consumer data, and mandate human-in-the-loop oversight for high-value credit underwriting.
+
+2. Governance and Board Oversight
+2.1 Every RE deploying algorithmic credit models must establish a Model Risk Management Committee (MRMC) reporting directly to the Board of Directors.
+2.2 The MRMC shall conduct bi-annual model stress testing and audit algorithmic drift.
+2.3 The Board-approved model governance policy shall be reviewed at least once every financial year.
+
+3. Model Risk Management and Human-in-the-Loop Thresholds
+3.1 For all individual credit facilities exceeding INR 50,00,000 (Rupees Fifty Lakhs) and corporate/MSME credit facilities exceeding INR 2,00,00,000 (Rupees Two Crores), an adverse algorithmic decision (credit rejection or rating downgrade) shall be reviewed and countersigned by a human credit officer.
+3.2 Regulated Entities shall maintain complete feature attribution records (e.g., SHAP or Integrated Gradients values) for a minimum statutory period of eight (8) years from the date of loan closure.
+3.3 Black-box neural models lacking verifiable feature attribution documentation are strictly prohibited from determining primary eligibility for subsidized government credit schemes.
+
+4. Customer Grievance Redressal and Adverse Action Disclosures
+4.1 In the event of credit rejection driven primarily by an algorithmic scoring model, the RE shall provide the applicant with a written Reason for Adverse Action Notice within three (3) business days.
+4.2 Such notice shall disclose the top four (4) key contributory financial factors without compromising proprietary model intellectual property.
+4.3 Customer appeals against automated credit denials must be resolved by the designated Principal Nodal Officer within a maximum turnaround time (TAT) of fifteen (15) calendar days.
+
+Yours faithfully,
+
+(Synthetic Regulatory Authority)
+Chief General Manager

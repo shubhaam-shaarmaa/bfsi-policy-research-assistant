@@ -1,0 +1,39 @@
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Variables & Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Data directories (keep directory structure, ignore actual downloaded binary files)
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/.gitkeep
+data/vectorstore/*
+!data/vectorstore/.gitkeep
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build Artifacts
+build/
+dist/
+*.egg-info/
