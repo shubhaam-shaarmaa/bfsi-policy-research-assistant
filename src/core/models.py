@@ -22,6 +22,12 @@ class DocumentType(str, Enum):
     UNKNOWN = "unknown"
 
 
+class ChunkingStrategy(str, Enum):
+    FIXED = "fixed"
+    RECURSIVE = "recursive"
+    STRUCTURE_AWARE = "structure_aware"
+
+
 class DocumentMetadata(BaseModel):
     """Metadata describing a regulatory/banking policy document."""
 
@@ -74,3 +80,24 @@ class ParsedDocument(BaseModel):
         default_factory=list,
         description="Warnings such as low text density, potential scanned page, or missing header",
     )
+
+
+class Chunk(BaseModel):
+    """A granular chunk of regulatory text enriched with citation metadata."""
+
+    chunk_id: str = Field(..., description="Unique chunk identifier (e.g., doc_id#c001)")
+    document_id: str = Field(..., description="Parent document identifier")
+    document_title: str = Field(..., description="Title of parent document")
+    issuer: str = Field(..., description="Regulatory issuer (e.g. RBI, SEBI)")
+    circular_number: str | None = Field(None, description="Regulatory circular number")
+    date: str | None = Field(None, description="Document publication date")
+    doc_type: DocumentType = Field(..., description="Document type")
+    page_number: int = Field(..., ge=1, description="Page number where chunk appears")
+    section_heading: str = Field(..., description="Section or chapter heading context")
+    clause_number: str | None = Field(None, description="Clause or rule number (e.g., 3.1, 4(a))")
+    content: str = Field(..., description="Processed chunk text")
+    content_hash: str = Field(..., description="SHA-256 hash of chunk content for deduplication")
+    chunk_index: int = Field(..., ge=0, description="0-indexed position within document")
+    token_count: int = Field(..., ge=0, description="Exact or estimated token count")
+    strategy: ChunkingStrategy = Field(..., description="Chunking strategy used")
+    metadata: dict[str, Any] = Field(default_factory=dict, description="Additional custom metadata")

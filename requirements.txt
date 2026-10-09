@@ -27,7 +27,7 @@ pytest-asyncio>=0.23.0
 #
 # Stage 5: LLM & Evaluation
 # anthropic>=0.25.0
-# tiktoken>=0.7.0
+tiktoken>=0.7.0
 #
 # Stage 6: FastAPI Server
 # fastapi>=0.111.0

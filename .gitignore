@@ -24,6 +24,8 @@ data/raw/*
 !data/raw/README.md
 data/processed/*
 !data/processed/.gitkeep
+data/chunks/*
+!data/chunks/.gitkeep
 data/vectorstore/*
 !data/vectorstore/.gitkeep
 

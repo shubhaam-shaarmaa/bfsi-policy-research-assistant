@@ -2,6 +2,8 @@
 
 from src.core.logging import app_logger, setup_logger
 from src.core.models import (
+    Chunk,
+    ChunkingStrategy,
     DocumentMetadata,
     DocumentType,
     ExtractedSection,
@@ -11,6 +13,8 @@ from src.core.models import (
 __all__ = [
     "app_logger",
     "setup_logger",
+    "Chunk",
+    "ChunkingStrategy",
     "DocumentMetadata",
     "DocumentType",
     "ExtractedSection",

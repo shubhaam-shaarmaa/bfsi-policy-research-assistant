@@ -47,6 +47,13 @@ class Settings(BaseSettings):
     QDRANT_PATH: Path = PROJECT_ROOT / "data" / "vectorstore" / "qdrant_embedded"
     COLLECTION_NAME: str = "bfsi_policy_circulars"
 
+    # Chunking Settings (Stage 2)
+    CHUNKING_STRATEGY: Literal["fixed", "recursive", "structure_aware"] = "structure_aware"
+    CHUNK_SIZE: int = 500  # Target max tokens per chunk
+    CHUNK_OVERLAP: int = 50  # Overlap tokens for sliding windows / recursive splits
+    CHUNK_MIN_TOKENS: int = 20  # Minimum tokens threshold to retain a chunk
+    DATA_CHUNKS_DIR: Path = PROJECT_ROOT / "data" / "chunks"
+
     # Retrieval Settings (Stage 4)
     RETRIEVAL_HYBRID_ENABLED: bool = True
     RERANKER_ENABLED: bool = False
@@ -59,6 +66,7 @@ class Settings(BaseSettings):
             self.DATA_PROCESSED_DIR,
             self.DATA_SYNTHETIC_DIR,
             self.DATA_VECTORSTORE_DIR,
+            self.DATA_CHUNKS_DIR,
         ]:
             path.mkdir(parents=True, exist_ok=True)
 
