@@ -1,0 +1,42 @@
+[
+  {
+    "Configuration": "1. Pure Dense Vector",
+    "Hit@1": 0.0,
+    "Hit@3": 0.0,
+    "Hit@5": 0.0,
+    "MRR@5": 0.0,
+    "Recall@5": 0.033,
+    "Faithfulness": 0.0,
+    "Avg Latency (ms)": 32.3
+  },
+  {
+    "Configuration": "2. Pure BM25 Keyword",
+    "Hit@1": 0.1,
+    "Hit@3": 0.1,
+    "Hit@5": 0.1,
+    "MRR@5": 0.1,
+    "Recall@5": 0.128,
+    "Faithfulness": 1.0,
+    "Avg Latency (ms)": 0.6
+  },
+  {
+    "Configuration": "3. Hybrid RRF",
+    "Hit@1": 0.1,
+    "Hit@3": 0.1,
+    "Hit@5": 0.1,
+    "MRR@5": 0.1,
+    "Recall@5": 0.128,
+    "Faithfulness": 1.0,
+    "Avg Latency (ms)": 32.0
+  },
+  {
+    "Configuration": "4. Hybrid RRF + Reranker",
+    "Hit@1": 0.1,
+    "Hit@3": 0.133,
+    "Hit@5": 0.133,
+    "MRR@5": 0.111,
+    "Recall@5": 0.131,
+    "Faithfulness": 1.0,
+    "Avg Latency (ms)": 36.6
+  }
+]

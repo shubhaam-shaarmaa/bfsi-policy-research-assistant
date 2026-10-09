@@ -1,0 +1,272 @@
+[
+  {
+    "id": "eval_001",
+    "question": "What is the maximum permissible portfolio cap for Default Loss Guarantee under RBI digital lending guidelines?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "3.1",
+    "key_phrases": ["shall not exceed 5%", "loan portfolio", "DLG cover", "Regulated Entities"],
+    "category": "digital_lending"
+  },
+  {
+    "id": "eval_002",
+    "question": "Are Regulated Entities permitted to enter into DLG agreements with willful defaulters?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "3.3",
+    "key_phrases": ["wilful defaulters", "unpaid defaulter", "shall not enter into DLG"],
+    "category": "digital_lending"
+  },
+  {
+    "id": "eval_003",
+    "question": "What are the rules regarding implicit guarantee arrangements in digital lending?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "3.2",
+    "key_phrases": ["implicit guarantee", "exceeding the 5% cap", "performance obligations"],
+    "category": "digital_lending"
+  },
+  {
+    "id": "eval_004",
+    "question": "Who must approve the policy on Default Loss Guarantee arrangements in a bank or NBFC?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "2.1",
+    "key_phrases": ["Board of Directors", "Board approved policy", "due diligence"],
+    "category": "governance"
+  },
+  {
+    "id": "eval_005",
+    "question": "What are the requirements for human-in-the-loop oversight in automated credit underwriting models?",
+    "expected_doc_id": "doc_7078bdacba54",
+    "expected_circular_number": "RBI/2024-25/SYNTH-88",
+    "expected_clause": "1",
+    "key_phrases": ["human-in-the-loop", "high-value credit underwriting", "model interpretability"],
+    "category": "ai_underwriting"
+  },
+  {
+    "id": "eval_006",
+    "question": "How often must Regulated Entities perform bias and fairness testing on AI credit models?",
+    "expected_doc_id": "doc_7078bdacba54",
+    "expected_circular_number": "RBI/2024-25/SYNTH-88",
+    "expected_clause": "3",
+    "key_phrases": ["quarterly bias testing", "fairness audits", "demographic parity"],
+    "category": "ai_underwriting"
+  },
+  {
+    "id": "eval_007",
+    "question": "What is the daily cutoff time for RTGS batch settlement reconciliation?",
+    "expected_doc_id": "doc_81d96ef96088",
+    "expected_circular_number": null,
+    "expected_clause": "2",
+    "key_phrases": ["16:30 hours", "RTGS settlement", "batch reconciliation"],
+    "category": "payment_ops"
+  },
+  {
+    "id": "eval_008",
+    "question": "What is the resolution SLA for priority break level 1 payment gateway incidents?",
+    "expected_doc_id": "doc_81d96ef96088",
+    "expected_circular_number": null,
+    "expected_clause": "3",
+    "key_phrases": ["15 minutes", "Priority 1", "critical outage", "incident commander"],
+    "category": "incident_management"
+  },
+  {
+    "id": "eval_009",
+    "question": "How long must payment gateway audit logs and timestamp records be preserved in immutable storage?",
+    "expected_doc_id": "doc_81d96ef96088",
+    "expected_circular_number": null,
+    "expected_clause": "4",
+    "key_phrases": ["seven (7) years", "immutable cold storage", "audit timestamps"],
+    "category": "audit_compliance"
+  },
+  {
+    "id": "eval_010",
+    "question": "What is the maximum invocation period for invoking a default loss guarantee following credit default?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "4.1",
+    "key_phrases": ["maximum period of 120 days", "invocation of DLG", "overdue"],
+    "category": "digital_lending"
+  },
+  {
+    "id": "eval_011",
+    "question": "Can Regulated Entities accept DLG in forms other than cash, fixed deposits, or bank guarantees?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "3.4",
+    "key_phrases": ["cash deposit", "fixed deposits lien-marked", "bank guarantee"],
+    "category": "digital_lending"
+  },
+  {
+    "id": "eval_012",
+    "question": "What committee oversees cybersecurity posture and IT resilience at the board level?",
+    "expected_doc_id": "doc_rbi_it",
+    "expected_circular_number": "RBI/2023-24/107",
+    "expected_clause": "5.2",
+    "key_phrases": ["IT Strategy Committee", "cyber risk posture", "Board of Directors"],
+    "category": "cyber_security"
+  },
+  {
+    "id": "eval_013",
+    "question": "What are the disclosure requirements for lending service providers on digital lending apps?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "5.1",
+    "key_phrases": ["key fact statement", "KFS", "annual percentage rate", "APR"],
+    "category": "consumer_protection"
+  },
+  {
+    "id": "eval_014",
+    "question": "What is the mandatory cooling-off period during which a digital lending borrower can exit without penalty?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "6.2",
+    "key_phrases": ["cooling-off period", "look-up period", "exit without penalty", "at least three days"],
+    "category": "consumer_protection"
+  },
+  {
+    "id": "eval_015",
+    "question": "What are the rules regarding data sovereignty and storage of payment system data in India?",
+    "expected_doc_id": "doc_rbi_it",
+    "expected_circular_number": "RBI/2023-24/107",
+    "expected_clause": "7.1",
+    "key_phrases": ["data localization", "payment system data", "stored only in India"],
+    "category": "data_privacy"
+  },
+  {
+    "id": "eval_016",
+    "question": "What must Regulated Entities do before onboarding an outsourced fintech lending partner?",
+    "expected_doc_id": "doc_7078bdacba54",
+    "expected_circular_number": "RBI/2024-25/SYNTH-88",
+    "expected_clause": "2",
+    "key_phrases": ["due diligence", "technical audit", "cyber posture", "LSP agreement"],
+    "category": "vendor_risk"
+  },
+  {
+    "id": "eval_017",
+    "question": "What are the multi-factor authentication requirements for internet banking transactions?",
+    "expected_doc_id": "doc_81d96ef96088",
+    "expected_circular_number": null,
+    "expected_clause": "1",
+    "key_phrases": ["two-factor authentication", "2FA", "dynamic OTP", "risk-based authentication"],
+    "category": "payment_security"
+  },
+  {
+    "id": "eval_018",
+    "question": "How are customer grievances regarding digital lending disputes escalated to the RBI Ombudsman?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "8.1",
+    "key_phrases": ["Grievance Redressal Officer", "GRO", "RBI Ombudsman", "30 days"],
+    "category": "grievance_redressal"
+  },
+  {
+    "id": "eval_019",
+    "question": "Can automated underwriting algorithms use non-financial social media data for credit assessment?",
+    "expected_doc_id": "doc_7078bdacba54",
+    "expected_circular_number": "RBI/2024-25/SYNTH-88",
+    "expected_clause": "4",
+    "key_phrases": ["prohibited from using", "social media data", "contact lists", "explicit borrower consent"],
+    "category": "ai_underwriting"
+  },
+  {
+    "id": "eval_020",
+    "question": "What constitutes an implicit guarantee arrangement in fintech partnerships?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "3.2",
+    "key_phrases": ["implicit guarantee", "performance guarantee", "underwriting shortfall"],
+    "category": "digital_lending"
+  },
+  {
+    "id": "eval_021",
+    "question": "What is the reporting requirement for cybersecurity incidents to CERT-In and RBI?",
+    "expected_doc_id": "doc_rbi_it",
+    "expected_circular_number": "RBI/2023-24/107",
+    "expected_clause": "6.1",
+    "key_phrases": ["within 6 hours", "CERT-In", "incident reporting", "severity level 1"],
+    "category": "cyber_security"
+  },
+  {
+    "id": "eval_022",
+    "question": "What is the maximum session inactivity timeout for corporate payment portal users?",
+    "expected_doc_id": "doc_81d96ef96088",
+    "expected_circular_number": null,
+    "expected_clause": "2",
+    "key_phrases": ["session timeout", "15 minutes", "inactivity termination"],
+    "category": "payment_security"
+  },
+  {
+    "id": "eval_023",
+    "question": "How must model risk management committees document machine learning model drift?",
+    "expected_doc_id": "doc_7078bdacba54",
+    "expected_circular_number": "RBI/2024-25/SYNTH-88",
+    "expected_clause": "3",
+    "key_phrases": ["model drift monitoring", "Population Stability Index", "PSI threshold"],
+    "category": "ai_underwriting"
+  },
+  {
+    "id": "eval_024",
+    "question": "Can a Regulated Entity delegate credit underwriting decisions entirely to a third-party LSP?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "1.3",
+    "key_phrases": ["cannot be delegated", "core credit decision", "responsibility of RE alone"],
+    "category": "governance"
+  },
+  {
+    "id": "eval_025",
+    "question": "What is the capital computation requirement for DLG exposure held on balance sheet?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "3.5",
+    "key_phrases": ["capital adequacy", "risk weight", "credit risk mitigation", "CRM"],
+    "category": "capital_adequacy"
+  },
+  {
+    "id": "eval_026",
+    "question": "What is the mandate for borrower biometric data retention in digital loan onboarding?",
+    "expected_doc_id": "doc_7078bdacba54",
+    "expected_circular_number": "RBI/2024-25/SYNTH-88",
+    "expected_clause": "4",
+    "key_phrases": ["biometric data shall not be stored", "Aadhaar number masking", "UIDAI guidelines"],
+    "category": "data_privacy"
+  },
+  {
+    "id": "eval_027",
+    "question": "What is the escalation procedure if an interbank settlement fails at the DTCC cutoff?",
+    "expected_doc_id": "doc_81d96ef96088",
+    "expected_circular_number": null,
+    "expected_clause": "3",
+    "key_phrases": ["DTCC cutoff", "manual exception handling", "Treasury Ops escalation"],
+    "category": "payment_ops"
+  },
+  {
+    "id": "eval_028",
+    "question": "What qualifications are required for members of the Model Governance Oversight Board?",
+    "expected_doc_id": "doc_7078bdacba54",
+    "expected_circular_number": "RBI/2024-25/SYNTH-88",
+    "expected_clause": "2",
+    "key_phrases": ["independent risk officer", "quantitative modeling expertise", "Chief Risk Officer"],
+    "category": "governance"
+  },
+  {
+    "id": "eval_029",
+    "question": "How are customer loan repayments disbursed under direct account-to-account RBI mandate?",
+    "expected_doc_id": "doc_rbi_dlg",
+    "expected_circular_number": "RBI/2023-24/41",
+    "expected_clause": "5.3",
+    "key_phrases": ["directly between borrower bank account", "and RE bank account", "no pass-through account"],
+    "category": "digital_lending"
+  },
+  {
+    "id": "eval_030",
+    "question": "What are the rules regarding cryptocurrency custody or digital asset tokenization for Indian banks?",
+    "expected_doc_id": null,
+    "expected_circular_number": null,
+    "expected_clause": null,
+    "key_phrases": [],
+    "category": "negative_test"
+  }
+]
